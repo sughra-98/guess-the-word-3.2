@@ -82,7 +82,7 @@ function App() {
         <h1>Guess The Word 🚀</h1>
         <h3>Word Display</h3>
         
-        {TotalTries>=10? <h2 className="lost" >you lost the game , the word is ${currWord}</h2> : generateWordDisplay()}
+        {TotalTries>=10? <h2 className="lost" >you lost the game , the word is {currWord}</h2> : generateWordDisplay()}
         <h3>Guessed Letters</h3>
         {guessedLetters.length > 0 ? guessedLetters.toString() : "-"}
         <br />
